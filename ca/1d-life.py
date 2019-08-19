@@ -2,12 +2,12 @@ import pygame, random
 
 def get_new_value(old_gen, old_automata):
     automata = old_automata
-    current_row = old_automata[SQ_NUM * old_gen : SQ_NUM * (old_gen + 1)]
+    current_row = old_automata[SQ_NUM*old_gen:SQ_NUM*(old_gen+1)]
 
     for i in range(len(current_row)):
         e = i + 1
         w = i - 1
-        s = ((SQ_NUM * old_gen) + 1) + 49
+        s = ((SQ_NUM * old_gen) + i) + 49
 
         if s < len(automata):
             if current_row[i] == 1:
