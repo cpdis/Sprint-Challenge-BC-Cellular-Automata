@@ -1,10 +1,12 @@
 import pygame, random
 
 def get_new_value(old_gen, old_automata):
-    # TBC - add code to generate the next row of cells,
-    # then replace the return statement below to
-    # return the updated automata
-    return old_automata
+    automata = old_automata
+    current_row = old_automata[SQ_NUM * old_gen : SQ_NUM * (old_gen + 1)]
+
+    for i in range(len(current_row)):
+        
+    return automata
 
 # Define some colors and other constants
 BLACK = (0, 0, 0)
